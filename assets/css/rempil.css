@@ -1,0 +1,203 @@
+/*=============== BASE ===============*/
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+}
+
+.grid {
+  gap: 1.2rem;
+}
+
+/*--=============== HEADER ===============--*/
+.header {
+  background-color: transparent;
+  position: absolute;
+}
+
+.nav__logo,
+.nav__link {
+  color: var(--white);
+}
+/*--=============== BANNER ===============--*/
+.banner {
+  height: 100vh;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner__container {
+  row-gap: 3rem;
+  position: relative;
+  height: 100%;
+}
+
+.banner__categories span {
+  color: #8358b9;
+  font-size: 14px;
+  font-weight: var(--light);
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 3px;
+  background-color: #e1d9eb;
+}
+
+.category {
+  margin-bottom: 15px
+}
+
+.banner__data {
+  color: var(--white);
+}
+
+.banner__title {
+  color: var(--white);
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--mb-0-75);
+}
+
+.banner__description {
+  font-weight: bold;
+}
+
+.banner__element {
+  margin-bottom: 15px;
+}
+
+.resources-title {
+  margin-bottom: 5px;
+}
+
+.banner__resources li {
+  margin-right: 10px;
+}
+
+.resources__icons a {
+  font-size: 32px;
+  color: var(--white);
+}
+
+.resources__icons a:hover {
+  color: var(--purple);
+}
+
+/*--=============== ABOUT PROJECT ===============--*/
+.column-left h1 {
+  margin-bottom: 0;
+}
+
+.about__subtitle {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+/*--=============== MOCKUP PROJECT ===============--*/
+#mockup {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mockup_project_video {
+  width: 250px;
+}
+
+.container#mockup {
+  min-width: 100%;
+}
+
+.video-demoday {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.video-demoday::after {
+  padding-top: 56.25%;
+  display: block;
+  content: '';
+}
+
+.video-demoday iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*--=============== OTHER PROJECTS ===============--*/
+.work__element {
+  height: 300px;
+}
+
+.overlay {
+  padding-top: 21px;
+  padding-left: 21px;
+}
+
+.work__title {
+  font-size: 20px;
+}
+
+.work__category {
+  font-size: 11px;
+}
+
+/*--=============== MEDIA QUERIES ===============--*/
+
+@media screen and (max-width: 576px) {
+  .nav__logo,
+  .nav__link {
+    color: var(--black);
+  }
+  .mockup_project_video {
+  width: 180px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  /* .banner__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  } */
+  .work__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  body {
+      margin: 0;
+    }
+
+    .section {
+      padding: 3rem 0 3rem;
+    }
+
+    .banner__container {
+      padding: 6rem 0 6rem;
+    }
+}
+
+@media screen and (min-width: 968px) {
+  .work__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .banner__description {
+    padding-right: 5rem;
+  }
+}

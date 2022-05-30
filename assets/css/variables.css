@@ -1,0 +1,51 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Roboto:wght@100&display=swap');
+@import url("https: //fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3rem;
+  /*========== Colors ==========*/
+  --white: #ffffff;
+  --black: #000000;
+  --purple: #8358b9;
+  --lightpurple: #e1d9eb;
+  --text-color: #5d5b56;
+  --text-color-light: #a9a8a2;
+  --lightgray: #f2f2f1;
+  --title-color: #282725;
+  --scroll-bar-color: #e3e2e9;
+  --scroll-thumb-color: #c1b6fc;
+  --container-color: #FFF;
+  /*========== Font and typography ==========*/
+  --body-font: 'Karla', sans-serif;
+  --biggest-font-size: 70px;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+  /*========== Font weight ==========*/
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  /*========== Margenes ==========*/
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+    --biggest-font-size: 3rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
